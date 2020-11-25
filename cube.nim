@@ -197,6 +197,3 @@ func F2*(cube: var Cube) =
 
 func B2*(cube : var Cube) =
     cube.B; cube.B
-
-var cube = initCube(solved)
-echo cube.printCube
