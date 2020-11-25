@@ -34,7 +34,6 @@ func reflect(i, tp : int | float) : int | float =
 
 func cubeRepr*(cube : Cube) : string =
     return &"""
-
                             {cube.u[0]}  {cube.u[1]}  {cube.u[2]}
                             {cube.u[3]}  {cube.u[4]}  {cube.u[5]}
                             {cube.u[6]}  {cube.u[7]}  {cube.u[8]}
