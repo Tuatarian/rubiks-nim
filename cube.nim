@@ -32,7 +32,7 @@ func initCube*(state : initState) : Cube =
 func reflect(i, tp : int | float) : int | float =
     return tp - i + tp
 
-func printCube*(cube : Cube) : string =
+func cubeRepr*(cube : Cube) : string =
     return &"""
 
                             {cube.u[0]}  {cube.u[1]}  {cube.u[2]}
@@ -58,7 +58,7 @@ func swapStickersVerti(a, b : var array[9, char], i : int, swapnum : int) =
         a[i + 3].swap(b[i + 3])
         a[i + 6].swap(b[i + 6])
 
-func swapStickersHori(a, b : var array[9, char], i, swapnum : int) =
+func swapStickersHori(a, b : var array[9, char], i, swapnum : int) = 
     if swapnum == 1:
         if i == 2:
             a[i].swap(b[8])
