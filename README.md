@@ -14,3 +14,9 @@ Upcoming
 - Rotations (ie rotating the entire cube in different directions, tentative)
 - Solver (probably Thistlewaite algorithm)
 - Scrambler
+
+## Thistlethwaite Algorithm explanation
+
+Let `G = <L, R, F, B, U, D>`, `G1 =  <L, R, F, B, U2, D2>`, `G3 =  <L, R, F2, B2, U2, D2>`, `G4 =  <L2, R2, F2, B2, U2, D2>`. Note how each sucessive group excludes some moves from those prior (notably, allowing U turns allow for U2 and Uprime moves, but only allowing a U2 move allows nothing but a U2 move)
+
+A basic plan then can be to go from group G_i to G_i+1
